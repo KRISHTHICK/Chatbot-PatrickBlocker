@@ -16,6 +16,10 @@ $ cd chatbot-deployment
 $ python3 -m venv venv
 $ . venv/bin/activate
 ```
+to activate on linux.
+```
+$ source venv/bin/activate
+```
 Install dependencies
 ```
 $ (venv) pip install Flask torch torchvision nltk
@@ -25,6 +29,7 @@ Install nltk package
 $ (venv) python
 >>> import nltk
 >>> nltk.download('punkt')
+>>> nltk.download('punkt_tab')
 ```
 Modify `intents.json` with different intents and responses for your Chatbot
 
